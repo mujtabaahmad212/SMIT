@@ -48,14 +48,30 @@
         transition: ease-in-out 0.4s;
         background-color: rgb(255, 124, 2);
       }
+      *{
+        color: white;
+        background-color: black;
+        
+      }
+      
+      #link:hover{
+        background-color: rgb(162, 162, 162)
+      }
+      .pages{
+        display: flex;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+      }
     </style>
 </head>
 <body>
-    <pre>  <h2> <a href="./index.html">HOME</a>   <a href="./contact.html">contact us</a>    <a href="./skills.html">MY Skills</a>   <a href="./project.html">Project</a>   </h2></pre>
+  <center>
+    <h3 class="pages"> <a href="./index.html">HOME</a>   <a href="./contact.html">contact us</a>    <a href="./skills.html">MY Skills</a>   <a href="./project.html">Project</a>   </h3>
+</center>
+    <hr><br>
 
-    <br>
-
-   <hr><br>
+   
     
    
     <!--<h2>Email</h2>
@@ -64,8 +80,7 @@
      
      <h2>linkedIn</h2>-->
      
-
-
+<center>
  <table>
     <thead>
         <tr>
@@ -79,11 +94,12 @@
     </tr>
 </thead>
 <tbody>
-     <tr>
-        <td> <a href="mailto:mujtabaahmad4200@gmail.com" target="_blank">Visit</a></td>
-        <td><a href="https://www.instagram.com/mujtabaahmad__/" target="_blank">Visit</a></td>
-        <td><a href="https://www.linkedin.com/in/mujtaba-ahmad-254b4625a" target="_blank">Visit</a></td>
+     <tr >
+        <td> <a href="mailto:mujtabaahmad4200@gmail.com" target="_blank" id="link" style="border-radius: 10px;">Visit</a></td>
+        <td><a href="https://www.instagram.com/mujtabaahmad__/" target="_blank" id="link"  style="border-radius: 10px;">Visit</a></td>
+        <td><a href="https://www.linkedin.com/in/mujtaba-ahmad-254b4625a" target="_blank"id="link" style="border-radius: 10px;">Visit</a></td>
      </tr>
+</center>
 
 </tbody>
 
@@ -93,5 +109,11 @@
 
 
  </table>
+ 
+ <center>
+  <footer>
+    <p class="footer" style="border-radius:100px ;background-color: gold;color: black;padding: 20px;">&copy; 2024 Your Website. All rights reserved.</p>
+  </footer>
+  </center>
 </body>
 </html>
