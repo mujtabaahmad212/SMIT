@@ -65,8 +65,8 @@
         .fieldset{
             border-radius: 30px;
             background: linear-gradient(to right, #7606f5,#f50681);
-            border: solid 3px;
-            border-color: rgb(255, 255, 0);
+            /* border: solid 3px; */
+            /* border-color: rgb(255, 255, 0); */
             box-shadow: 0px 0px 30px;
             margin-left: 20%;
             margin-right: 20%;
@@ -80,6 +80,13 @@
             background-color: gold;
             
             border-radius: 10px;
+            padding-left: 100px;
+            padding-right: 100px;
+            position: relative;
+            box-shadow: 0px 0px 15px gold;
+            
+           
+            
         }
         .code{
             border-radius: 30px;
@@ -93,9 +100,14 @@
             color: white;
         }
     
-           .pages{
-            background-color: gold;
-            padding: 20px;
+        .pages{
+            background: linear-gradient(to right,#7606f5,#f50681);
+            padding: 15px;
+            /* border: solid 2px; */
+            border-color:  gold;
+            /* box-shadow: inset 
+            0px 0px 30px gold; */
+            box-shadow: 0px 0px 20px rgb(0, 0, 0);
             border-radius: 20px;
             margin-bottom: 50px;
             display:flex;
@@ -104,27 +116,43 @@
             justify-content: space-evenly;
            }
         
-        
+        #allpages{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            
+
+        }
       
-                
+        #instructions{
+            color: rgb(255, 255, 255);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .instructions{
+            margin-top: 100px;
+            border: 0px;
+            background-color: #a06cf3;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px #000;
+        }
             
     </style>
 </head>
 <body class="body">
 
     <center>
-        <h3 class="pages"><a href="../index.html">HOME</a>   <a href="../contact.html">contact us</a>   <a href="../skills.html">MY Skills</a>  <a href="../project.html">Projects</a> </h3> 
+        <h3 class="pages" ><a href="../index.html"id="allpages">HOME</a>   <a href="../contact.html" id="allpages">CONTACT US</a>   <a href="../skills.html"id="allpages" >MY SKILLS</a>  <a href="../project.html" id="allpages">PROJECTS</a> </h3> 
         </header></center>
 
 
 
 
-
+        <!-- form -->
 
     <fieldset class="fieldset">
         <legend class="legend"><b>Event Registration Form</b></legend>
     
     <form class="form">
+        
      Name: <input class="fname" type="text" required maxlength="10" placeholder="First Name"> <input class="lname" type="text" maxlength="10" required placeholder="Last Name">
      <br><br> 
      Field: <input class="Company" type="text" placeholder="e.g:BSIT">
@@ -153,14 +181,37 @@
      <br><br><br>
      <p>Are you an exesting Student:</p>
      Yes: <input type="radio">
-     No:  <input type="radio"><br><br>
+     No:  <input type="radio"><br><br> 
      <input class="submit" type="submit" value="REGISTER">
 </fieldset>
+
     </form>
+
+
+<!-- form filling instruction -->
+    <fieldset class="instructions">
+    <legend class="legend"><b>Instruction:</b></legend>
+
+   <ul style="list-style-type:disc; font: size 1PX; color:#000; "></ul>
+
+
+      <p id="instructions"> 
+       1: Enter your full name as it appears on official documents.</p>
+      <p id="instructions">
+       2: Specify the field or area of interest relevant to the event.</p>
+      <p id="instructions"> 
+       3: Provide a reachable contact number. This will be used for event-related communications only.</p>
+      <p id="instructions">
+       4: Indicate the institution or educational establishment you are associated with, if applicable.</p>
+      <p id="instructions">
+       5: Mark 'Yes' if you are currently enrolled as a student in our institution, 'No' otherwise.</p>
+</fieldset>
+
+
 
     <center>
         <footer>
-          <p class="footer" style="border-radius:100px ;background-color:  gold;padding: 20px;">&copy; 2024 Your Website. All rights reserved.</p>
+          <p class="footer" style="border-radius:100px ;background-color:  gold;padding: 20px;margin-top: 10%;">&copy; 2024 Your Website. All rights reserved.</p>
         </footer>
         </center>
 </body>
